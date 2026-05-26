@@ -97,28 +97,16 @@ export default function Projects() {
                 ))}
               </div>
 
-              {(project.github || project.demo) && (
+              {project.demo && (
                 <div className="flex items-center gap-4 mt-auto pt-4 border-t border-[var(--card-border)]">
-                  {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm text-[var(--fg-2)] hover:text-[var(--fg)] transition-colors"
-                    >
-                      <GithubIcon size={16} /> GitHub
-                    </a>
-                  )}
-                  {project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm text-[var(--fg-2)] hover:text-[var(--fg)] transition-colors"
-                    >
-                      <ExternalLink size={16} /> Live Demo
-                    </a>
-                  )}
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm text-[var(--fg-2)] hover:text-[var(--fg)] transition-colors"
+                  >
+                    <ExternalLink size={16} /> Live Demo
+                  </a>
                 </div>
               )}
             </motion.div>

@@ -15,7 +15,7 @@ const SOCIALS = [
     icon: GithubIcon,
     label: "GitHub",
     sub: "See my code",
-    href: "https://github.com/areebafatima",
+    href: "https://github.com/Areeebaa",
   },
   {
     icon: Mail,
