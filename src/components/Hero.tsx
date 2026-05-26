@@ -29,11 +29,11 @@ export default function Hero() {
         transition={{ delay: 0.2, duration: 0.6 }}
         className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight max-w-4xl mx-auto"
       >
-        Building AI-Powered
+        Building software
         <br />
-        Products & Real-World
+        that solves real
         <br />
-        Solutions
+        problems.
       </motion.h1>
 
       {/* Sub */}
@@ -43,7 +43,7 @@ export default function Hero() {
         transition={{ delay: 0.35, duration: 0.6 }}
         className="mt-6 text-base sm:text-lg text-[var(--fg2)] max-w-2xl mx-auto leading-relaxed"
       >
-        IT student and AI Developer. Passionate about building scalable, real-world solutions bridging artificial intelligence, full-stack development, and backend systems.
+        I&apos;m a student and developer focused on applied AI and backend engineering. I build robust, scalable applications that bring machine learning out of research and into the real world.
       </motion.p>
 
       {/* CTA Buttons */}
@@ -83,7 +83,7 @@ export default function Hero() {
         className="mt-8 flex items-center gap-3"
       >
         <a
-          href="https://github.com/areebafatima"
+          href="https://github.com/Areeebaa"
           target="_blank"
           rel="noopener noreferrer"
           className="glass w-10 h-10 rounded-xl flex items-center justify-center text-[var(--fg2)] hover:text-[var(--fg)] transition-all hover:-translate-y-0.5"

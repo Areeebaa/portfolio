@@ -3,7 +3,7 @@ import { Mail, Heart } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/SocialIcons";
 
 const LINKS = [
-  { icon: GithubIcon, label: "GitHub", href: "https://github.com/areebafatima" },
+  { icon: GithubIcon, label: "GitHub", href: "https://github.com/Areeebaa" },
   { icon: LinkedinIcon, label: "LinkedIn", href: "https://linkedin.com/in/areeba-fatima" },
   { icon: Mail, label: "Email", href: "mailto:areeeebafatima@gmail.com" },
 ];
