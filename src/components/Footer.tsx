@@ -12,9 +12,8 @@ export default function Footer() {
   return (
     <footer className="relative z-10 py-10 border-t border-[var(--card-border)]">
       <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-        {/* Brand */}
         <div className="text-center sm:text-left">
-          <p className="font-bold grad-text text-lg">Areeba Fatima</p>
+          <p className="font-bold text-[var(--fg)] text-lg">Areeba Fatima</p>
           <p className="text-xs text-[var(--fg2)] mt-0.5">AI Engineer & Full-Stack Developer</p>
         </div>
 

@@ -29,11 +29,9 @@ export default function Hero() {
         transition={{ delay: 0.2, duration: 0.6 }}
         className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight max-w-4xl mx-auto"
       >
-        Building{" "}
-        <span className="grad-text">AI-Powered</span>
+        Building AI-Powered
         <br />
-        Products &{" "}
-        <span className="grad-text">Real-World</span>
+        Products & Real-World
         <br />
         Solutions
       </motion.h1>
@@ -61,10 +59,7 @@ export default function Hero() {
             e.preventDefault();
             document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
           }}
-          className="shine grad-border px-7 py-3 rounded-full font-semibold text-sm transition-all duration-200 hover:shadow-[0_0_32px_rgba(138,43,226,0.35)] text-[var(--fg)] flex items-center gap-2"
-          style={{
-            background: "linear-gradient(135deg, rgba(138,43,226,0.12), rgba(255,105,180,0.08))",
-          }}
+          className="glass px-7 py-3 rounded-full font-semibold text-sm transition-all duration-200 hover:bg-[var(--fg)] hover:text-[var(--bg)] flex items-center gap-2"
         >
           View Projects <ArrowRight size={16} />
         </a>

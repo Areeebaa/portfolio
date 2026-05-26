@@ -34,7 +34,7 @@ export default function Navbar() {
       <header
         className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${
           scrolled
-            ? "glass shadow-lg shadow-[rgba(138,43,226,0.08)]"
+            ? "glass shadow-sm shadow-black/5"
             : "bg-transparent"
         } rounded-2xl px-6 py-3 flex items-center gap-8 w-[min(92vw,860px)]`}
         style={{ maxWidth: 860 }}
@@ -42,7 +42,7 @@ export default function Navbar() {
         {/* Logo */}
         <button
           onClick={() => navClick("#hero")}
-          className="mr-auto text-lg font-bold grad-text tracking-tight shrink-0 focus:outline-none"
+          className="mr-auto text-lg font-bold text-[var(--fg)] tracking-tight shrink-0 focus:outline-none"
           aria-label="Go to top"
         >
           Areeba
@@ -66,8 +66,8 @@ export default function Navbar() {
             >
               {l.label}
               <span
-                className={`absolute bottom-0.5 left-3 right-3 h-0.5 rounded-full bg-gradient-to-r from-violet-500 via-pink-500 to-orange-400 transition-all duration-300 ${
-                  active === l.href ? "opacity-100" : "opacity-0 group-hover:opacity-60"
+                className={`absolute bottom-0.5 left-3 right-3 h-0.5 rounded-full bg-[var(--fg)] transition-all duration-300 ${
+                  active === l.href ? "opacity-100" : "opacity-0 group-hover:opacity-40"
                 }`}
               />
             </button>

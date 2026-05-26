@@ -10,28 +10,24 @@ const SOCIALS = [
     label: "LinkedIn",
     sub: "Connect professionally",
     href: "https://linkedin.com/in/areeba-fatima",
-    color: "from-blue-600 to-blue-500",
   },
   {
     icon: GithubIcon,
     label: "GitHub",
     sub: "See my code",
     href: "https://github.com/areebafatima",
-    color: "from-gray-700 to-gray-600",
   },
   {
     icon: Mail,
     label: "Email",
     sub: "areeeebafatima@gmail.com",
     href: "mailto:areeeebafatima@gmail.com",
-    color: "from-violet-600 to-pink-500",
   },
   {
     icon: Phone,
     label: "Phone",
     sub: "+91 6301351096",
     href: "tel:+916301351096",
-    color: "from-green-600 to-emerald-500",
   },
 ];
 
@@ -75,9 +71,9 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-sm font-semibold text-pink-500 uppercase tracking-widest mb-3">Get In Touch</p>
+          <p className="text-sm font-semibold text-[var(--fg)] uppercase tracking-widest mb-3">Get In Touch</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--fg)]">
-            Let&apos;s <span className="grad-text">Connect</span>
+            Let&apos;s Connect
           </h2>
           <p className="mt-4 text-[var(--fg2)] max-w-lg mx-auto text-sm leading-relaxed">
             I am currently looking for an entry-level role or internship to apply my problem-solving skills in backend, AI, or full-stack development. My inbox is always open.
@@ -92,30 +88,29 @@ export default function Contact() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="space-y-4"
           >
-            {SOCIALS.map(({ icon: Icon, label, sub, href, color }) => (
+            {SOCIALS.map(({ icon: Icon, label, sub, href }) => (
               <a
                 key={label}
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass rounded-2xl p-5 flex items-center gap-4 card-hover"
+                className="group flex items-center gap-4 glass p-4 rounded-2xl transition-all duration-300 hover:bg-[var(--fg)] hover:text-[var(--bg)]"
               >
-                <div className={`w-11 h-11 rounded-xl bg-gradient-to-br ${color} flex items-center justify-center shrink-0`}>
-                  <Icon size={20} className="text-white" />
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-[var(--pill)] group-hover:bg-transparent">
+                  <Icon size={22} className="text-[var(--fg)] group-hover:text-[var(--bg)]" />
                 </div>
                 <div>
-                  <p className="font-semibold text-[var(--fg)] text-sm">{label}</p>
-                  <p className="text-xs text-[var(--fg2)]">{sub}</p>
+                  <h3 className="font-semibold text-[var(--fg)] group-hover:text-[var(--bg)] text-base">{label}</h3>
+                  <p className="text-sm text-[var(--fg2)] group-hover:text-[var(--bg)] group-hover:opacity-80">{sub}</p>
                 </div>
               </a>
             ))}
 
-            {/* Resume Download */}
+            {/* Resume Button */}
             <a
               href="/resume.pdf"
-              download
-              className="shine w-full flex items-center justify-center gap-3 py-4 rounded-2xl font-semibold text-sm text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(138,43,226,0.4)]"
-              style={{ background: "linear-gradient(135deg, #8a2be2, #ff69b4, #ffa500)" }}
+              download="Areeba_Fatima_Resume.pdf"
+              className="shine w-full group flex items-center justify-center gap-2 p-4 rounded-2xl glass transition-all hover:bg-[var(--fg)] hover:text-[var(--bg)] text-[var(--fg)] font-semibold mt-6"
             >
               <Download size={18} />
               Download Resume
