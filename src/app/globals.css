@@ -3,29 +3,29 @@
 /* ─── Color tokens ──────────────────────────────── */
 :root {
   /* Backgrounds */
-  --bg:        #F6F5F2; /* A slightly warmer, softer ivory */
-  --bg-2:      #EBE9E1;
-  --bg-card:   #FFFFFF;
+  --bg:        #181C19; /* Very dark charcoal green base */
+  --bg-2:      #222824; /* Slightly lighter for layering */
+  --bg-card:   #1E231F;
   
   /* Text */
-  --fg:        #2C332E; /* Deep forest/sage green instead of harsh black */
-  --fg-2:      #636D66; /* Muted sage for secondary text */
-  --fg-muted:  #949B96;
+  --fg:        #F6F5F2; /* Soft ivory text (easy on the eyes) */
+  --fg-2:      #9DA7A0; /* Muted sage-grey for secondary text */
+  --fg-muted:  #6B746E;
   
   /* Accents */
-  --accent:    #516859; /* The core Dark Sage Green for buttons and active nav */
-  --accent-hover: #3F5245; /* Darker sage for hover states */
-  --accent-2:  #D4B895; /* A soft, warm sand/gold accent just in case we need a subtle pop */
-  --accent-grad: var(--accent); /* Solid dark sage for buttons instead of gradients */
+  --accent:    #66816F; /* Lighter Sage Green so it pops in dark mode */
+  --accent-hover: #799482; 
+  --accent-2:  #D4B895; /* Accent just in case we need a subtle pop */
+  --accent-grad: var(--accent); /* Solid buttons for a premium feel */
   
   /* Borders & UI */
-  --card-border: #E2E0D8;
-  --divider:   #E2E0D8;
-  --card:      #FFFFFF;
-  --pill:      #EBE9E1;
+  --card-border: #2D3530; /* Very subtle structural lines */
+  --divider:   #2D3530;
+  --card:      rgba(30, 35, 31, 0.75); /* Translucent card surface for glass effect */
+  --pill:      #262E29; /* Tech stack tags */
   
   /* Effects */
-  --shadow-soft: rgba(44, 51, 46, 0.05); /* Softer, slightly green-tinted shadow */
+  --shadow-soft: rgba(0, 0, 0, 0.4); /* Stronger shadow needed for depth in dark mode */
   --glow-subtle: transparent; /* No glow in this theme */
 }
 

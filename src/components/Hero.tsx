@@ -18,7 +18,6 @@ export default function Hero() {
         transition={{ delay: 0.1, duration: 0.5 }}
         className="mb-8 inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-[var(--fg2)]"
       >
-        <Sparkles size={14} className="text-[var(--accent)]" />
         Available for internships & entry-level roles
       </motion.div>
 
@@ -110,34 +109,6 @@ export default function Hero() {
         </a>
       </motion.div>
 
-      {/* Floating Tech Badges */}
-      <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.75, duration: 0.6 }}
-        className="mt-16 flex flex-wrap justify-center gap-2.5 max-w-xl mx-auto"
-      >
-        {BADGES.map((b) => (
-          <span
-            key={b}
-            className="glass px-3 py-1.5 rounded-full text-xs font-medium text-[var(--fg2)] transition-all hover:text-[var(--fg)] hover:-translate-y-0.5"
-            style={{ border: "1px solid var(--card-border)" }}
-          >
-            {b}
-          </span>
-        ))}
-      </motion.div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 0.8 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 text-[var(--fg2)]"
-      >
-        <span className="text-xs">scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-[var(--fg2)] to-transparent" />
-      </motion.div>
     </section>
   );
 }
