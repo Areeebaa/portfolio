@@ -18,7 +18,7 @@ export default function Hero() {
         transition={{ delay: 0.1, duration: 0.5 }}
         className="mb-8 inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-[var(--fg2)]"
       >
-        <Sparkles size={14} className="text-pink-500" />
+        <Sparkles size={14} className="text-[var(--accent)]" />
         Available for internships & entry-level roles
       </motion.div>
 

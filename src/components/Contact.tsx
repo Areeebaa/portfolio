@@ -135,7 +135,7 @@ export default function Contact() {
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   placeholder="Your name"
-                  className="w-full rounded-xl px-4 py-3 text-sm text-[var(--fg)] outline-none transition-all focus:ring-2 focus:ring-violet-500/40"
+                  className="w-full rounded-xl px-4 py-3 text-sm text-[var(--fg)] outline-none transition-all focus:ring-2 focus:ring-[var(--accent)]"
                   style={{ background: "var(--pill)", border: "1px solid var(--card-border)" }}
                 />
               </div>
@@ -150,7 +150,7 @@ export default function Contact() {
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
                   placeholder="your@email.com"
-                  className="w-full rounded-xl px-4 py-3 text-sm text-[var(--fg)] outline-none transition-all focus:ring-2 focus:ring-violet-500/40"
+                  className="w-full rounded-xl px-4 py-3 text-sm text-[var(--fg)] outline-none transition-all focus:ring-2 focus:ring-[var(--accent)]"
                   style={{ background: "var(--pill)", border: "1px solid var(--card-border)" }}
                 />
               </div>
@@ -165,7 +165,7 @@ export default function Contact() {
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
                   placeholder="Tell me what you're working on..."
-                  className="w-full rounded-xl px-4 py-3 text-sm text-[var(--fg)] outline-none resize-none transition-all focus:ring-2 focus:ring-violet-500/40"
+                  className="w-full rounded-xl px-4 py-3 text-sm text-[var(--fg)] outline-none resize-none transition-all focus:ring-2 focus:ring-[var(--accent)]"
                   style={{ background: "var(--pill)", border: "1px solid var(--card-border)" }}
                 />
               </div>
@@ -173,8 +173,8 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="shine w-full py-3 rounded-xl font-semibold text-sm text-white flex items-center justify-center gap-2 transition-all hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed"
-                style={{ background: "linear-gradient(135deg, #8a2be2, #ff69b4)" }}
+                className="shine w-full py-3 rounded-xl font-semibold text-sm text-white flex items-center justify-center gap-2 transition-all hover:-translate-y-0.5 hover:bg-[var(--accent-hover)] disabled:opacity-60 disabled:cursor-not-allowed"
+                style={{ background: "var(--accent)" }}
               >
                 {status === "loading" ? (
                   <>

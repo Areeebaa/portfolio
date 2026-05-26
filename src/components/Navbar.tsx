@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Menu, X, Sun, Moon } from "lucide-react";
-import { useTheme } from "@/components/ThemeProvider";
+import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "#hero", label: "Home" },
@@ -12,7 +11,6 @@ const links = [
 ];
 
 export default function Navbar() {
-  const { theme, toggle } = useTheme();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState("#hero");
@@ -74,15 +72,8 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Theme Toggle + Mobile Hamburger */}
-        <div className="flex items-center gap-2 ml-2">
-          <button
-            onClick={toggle}
-            className="glass w-9 h-9 rounded-xl flex items-center justify-center text-[var(--fg2)] hover:text-[var(--fg)] transition-colors duration-200 focus:outline-none"
-            aria-label="Toggle theme"
-          >
-            {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
-          </button>
+        {/* Mobile Hamburger */}
+        <div className="flex items-center ml-2">
           <button
             onClick={() => setOpen(!open)}
             className="glass w-9 h-9 rounded-xl flex items-center justify-center md:hidden text-[var(--fg2)] hover:text-[var(--fg)] transition-colors duration-200 focus:outline-none"

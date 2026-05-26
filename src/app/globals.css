@@ -2,32 +2,32 @@
 
 /* ─── Color tokens ──────────────────────────────── */
 :root {
-  --bg:        #0c0c10;
-  --bg-2:      #111118;
-  --bg-card:   #141420;
-  --fg:        #e8e8f0;
-  --fg-2:      #777799;
-  --card:      rgba(20, 20, 34, 0.75);
-  --card-border: rgba(255, 255, 255, 0.06);
-  --pill:      rgba(255, 255, 255, 0.05);
-  --glow:      rgba(100, 60, 220, 0.22);
-  --accent:    #7c3aed;
-  --accent-2:  #db2777;
-  --accent-3:  #ea580c;
+  /* Backgrounds */
+  --bg:        #F8F7F4;
+  --bg-2:      #F1EFEA;
+  --bg-card:   #FFFFFF;
+  
+  /* Text */
+  --fg:        #1F1F23;
+  --fg-2:      #5B5B66;
+  --fg-muted:  #8B8B95;
+  
+  /* Accents */
+  --accent:    #7C5CFC;
+  --accent-hover: #9A7BFF;
+  --accent-2:  #E88BA8;
+  
+  /* Borders & UI */
+  --card-border: #E4E1DA;
+  --divider:   #ECE9E2;
+  --card:      rgba(255, 255, 255, 0.85);
+  --pill:      #F1EFEA;
+  
+  /* Effects */
+  --shadow-soft: rgba(31, 31, 35, 0.06);
+  --glow-subtle: rgba(124, 92, 252, 0.12);
 }
 
-/* Light mode */
-.light {
-  --bg:        #f5f5f7;
-  --bg-2:      #eeeeF4;
-  --bg-card:   #ffffff;
-  --fg:        #0d0d14;
-  --fg-2:      #6b6b8a;
-  --card:      rgba(255, 255, 255, 0.80);
-  --card-border: rgba(0,0,0,0.07);
-  --pill:      rgba(0,0,0,0.04);
-  --glow:      rgba(124, 58, 237, 0.15);
-}
 
 @theme inline {
   --color-bg:  var(--bg);
