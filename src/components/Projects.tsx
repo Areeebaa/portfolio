@@ -75,7 +75,7 @@ export default function Projects() {
               initial={{ opacity: 0, y: 24 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group rounded-2xl border border-[var(--card-border)] bg-[var(--card)] p-6 transition-colors hover:border-[var(--fg-2)]"
+              className="group rounded-2xl border border-[var(--card-border)] bg-[var(--card)] p-6 transition-all card-hover"
             >
               <div className="mb-4">
                 <h3 className="font-bold text-[var(--fg)] text-lg mb-2">
@@ -90,7 +90,7 @@ export default function Projects() {
                 {project.techStack.map((tech) => (
                   <span
                     key={tech}
-                    className="text-xs px-2.5 py-1 rounded bg-[var(--pill)] text-[var(--fg-2)] border border-[var(--card-border)]"
+                    className="text-xs px-2.5 py-1 rounded bg-slate-100 text-slate-700 border border-slate-200"
                   >
                     {tech}
                   </span>

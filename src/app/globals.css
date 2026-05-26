@@ -3,30 +3,30 @@
 /* ─── Color tokens ──────────────────────────────── */
 :root {
   /* Backgrounds */
-  --bg:        #FAFAF7;
-  --bg-2:      #F3F4F6;
-  --bg-card:   #FFFFFF;
+  --bg:        #FDFBF7; /* Warm Pearl */
+  --bg-2:      #F4F1ED;
+  --bg-card:   transparent;
   
   /* Text */
-  --fg:        #111111;
-  --fg-2:      #52525B;
-  --fg-muted:  #8B8B95; /* Kept from previous for structural consistency if needed */
+  --fg:        #2A282D; /* Deep Espresso/Charcoal */
+  --fg-2:      #625F66; /* Muted Charcoal */
+  --fg-muted:  #949099;
   
   /* Accents */
-  --accent:    #4F46E5;
-  --accent-hover: #4338CA; /* Slightly darker indigo for hover */
-  --accent-2:  #F97373;
-  --accent-grad: linear-gradient(135deg, #4F46E5 0%, #F97373 100%);
+  --accent:    #F87171; /* Soft Coral */
+  --accent-hover: #EF4444; 
+  --accent-2:  #A78BFA; /* Soft Violet */
+  --accent-grad: linear-gradient(135deg, #F472B6 0%, #FB923C 100%);
   
-  /* Borders & UI */
-  --card-border: #E5E5E5;
-  --divider:   #E5E5E5;
-  --card:      #FFFFFF;
-  --pill:      #F3F4F6;
+  /* Borders & UI - Glassmorphism */
+  --card-border: rgba(0, 0, 0, 0.04);
+  --divider:   rgba(0, 0, 0, 0.06);
+  --card:      rgba(255, 255, 255, 0.65); /* Frosted Glass */
+  --pill:      rgba(0, 0, 0, 0.035);
   
   /* Effects */
-  --shadow-soft: rgba(17, 17, 17, 0.06);
-  --glow-subtle: transparent; /* No glow in this theme */
+  --shadow-soft: rgba(42, 40, 45, 0.04);
+  --glow-subtle: transparent;
 }
 
 
