@@ -3,30 +3,30 @@
 /* ─── Color tokens ──────────────────────────────── */
 :root {
   /* Backgrounds */
-  --bg:        #FDFBF7; /* Warm Pearl */
-  --bg-2:      #F4F1ED;
-  --bg-card:   transparent;
+  --bg:        #F6F5F2; /* A slightly warmer, softer ivory */
+  --bg-2:      #EBE9E1;
+  --bg-card:   #FFFFFF;
   
   /* Text */
-  --fg:        #2A282D; /* Deep Espresso/Charcoal */
-  --fg-2:      #625F66; /* Muted Charcoal */
-  --fg-muted:  #949099;
+  --fg:        #2C332E; /* Deep forest/sage green instead of harsh black */
+  --fg-2:      #636D66; /* Muted sage for secondary text */
+  --fg-muted:  #949B96;
   
   /* Accents */
-  --accent:    #F87171; /* Soft Coral */
-  --accent-hover: #EF4444; 
-  --accent-2:  #A78BFA; /* Soft Violet */
-  --accent-grad: linear-gradient(135deg, #F472B6 0%, #FB923C 100%);
+  --accent:    #516859; /* The core Dark Sage Green for buttons and active nav */
+  --accent-hover: #3F5245; /* Darker sage for hover states */
+  --accent-2:  #D4B895; /* A soft, warm sand/gold accent just in case we need a subtle pop */
+  --accent-grad: var(--accent); /* Solid dark sage for buttons instead of gradients */
   
-  /* Borders & UI - Glassmorphism */
-  --card-border: rgba(0, 0, 0, 0.04);
-  --divider:   rgba(0, 0, 0, 0.06);
-  --card:      rgba(255, 255, 255, 0.65); /* Frosted Glass */
-  --pill:      rgba(0, 0, 0, 0.035);
+  /* Borders & UI */
+  --card-border: #E2E0D8;
+  --divider:   #E2E0D8;
+  --card:      #FFFFFF;
+  --pill:      #EBE9E1;
   
   /* Effects */
-  --shadow-soft: rgba(42, 40, 45, 0.04);
-  --glow-subtle: transparent;
+  --shadow-soft: rgba(44, 51, 46, 0.05); /* Softer, slightly green-tinted shadow */
+  --glow-subtle: transparent; /* No glow in this theme */
 }
 
 

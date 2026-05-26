@@ -16,7 +16,7 @@ export default function About() {
 
   return (
     <section id="about" className="relative z-10 py-16 px-6">
-      <hr className="sec-divider mb-14" />
+
       <div ref={ref} className="max-w-5xl mx-auto">
         {/* Header */}
         <motion.div

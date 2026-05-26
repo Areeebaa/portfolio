@@ -5,44 +5,26 @@ import { motion, useInView } from "framer-motion";
 const SKILLS = [
   {
     category: "Programming",
-    colorBg: "bg-orange-50",
-    colorText: "text-orange-700",
-    borderColor: "border-orange-100",
     items: ["Python", "JavaScript", "TypeScript"],
   },
   {
     category: "Frontend",
-    colorBg: "bg-blue-50",
-    colorText: "text-blue-700",
-    borderColor: "border-blue-100",
     items: ["Flutter", "React Native", "React", "HTML", "CSS"],
   },
   {
     category: "Backend",
-    colorBg: "bg-emerald-50",
-    colorText: "text-emerald-700",
-    borderColor: "border-emerald-100",
     items: ["FastAPI", "Flask", "REST APIs"],
   },
   {
     category: "AI / ML",
-    colorBg: "bg-violet-50",
-    colorText: "text-violet-700",
-    borderColor: "border-violet-100",
     items: ["NLP", "RAG", "Federated Learning", "Hugging Face", "LLMs"],
   },
   {
     category: "Computer Vision",
-    colorBg: "bg-pink-50",
-    colorText: "text-pink-700",
-    borderColor: "border-pink-100",
     items: ["OpenCV", "YOLOv8", "Image Processing"],
   },
   {
     category: "Tools & Platforms",
-    colorBg: "bg-slate-100",
-    colorText: "text-slate-700",
-    borderColor: "border-slate-200",
     items: ["Git", "GitHub", "Firebase", "VS Code", "Postman"],
   },
 ];
@@ -53,7 +35,7 @@ export default function Skills() {
 
   return (
     <section id="skills" className="relative z-10 py-16 px-6">
-      <hr className="sec-divider mb-14" />
+
       <div ref={ref} className="max-w-5xl mx-auto">
         {/* Header */}
         <motion.div
@@ -90,7 +72,11 @@ export default function Skills() {
                 {group.items.map((skill) => (
                   <span
                     key={skill}
-                    className={`px-3 py-1 rounded-full text-xs font-medium border transition-all ${group.colorBg} ${group.colorText} ${group.borderColor} hover:bg-white hover:-translate-y-0.5`}
+                    className="px-3 py-1 rounded-full text-xs font-medium text-[var(--fg2)] transition-all hover:text-[var(--fg)]"
+                    style={{
+                      background: "var(--pill)",
+                      border: "1px solid var(--card-border)",
+                    }}
                   >
                     {skill}
                   </span>
