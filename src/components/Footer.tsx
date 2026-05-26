@@ -36,7 +36,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-xs text-[var(--fg2)] flex items-center gap-1">
-          &copy; {new Date().getFullYear()} Areeba Fatima. Built with Next.js & Tailwind CSS.
+          &copy; {new Date().getFullYear()} Areeba Fatima. All rights reserved.
         </p>
       </div>
     </footer>

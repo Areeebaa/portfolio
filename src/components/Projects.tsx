@@ -148,6 +148,40 @@ const PROJECTS: Project[] = [
     techStack: ["Python", "PyTorch", "Flower (FL Framework)", "Flask", "Transformers", "Hugging Face"],
     github: "https://github.com/areebafatima",
   },
+  {
+    id: "migo",
+    emoji: "🚺",
+    title: "Migo",
+    tagline: "Women Mobility & Training Platform",
+    description: "A women-focused mobility platform connecting female learners with verified female two-wheeler trainers through a safe, accessible digital experience.",
+    gradient: "from-pink-500 via-rose-400 to-fuchsia-500",
+    tags: ["Flutter", "Full-Stack", "Social Impact", "Startup"],
+    overview:
+      "Migo addresses a real gap: many women in India face discomfort or safety concerns when learning two-wheeler driving. The platform creates a safer learning ecosystem by connecting women learners exclusively with women trainers — built as a startup product with early registration, onboarding, and trainer discovery.",
+    architecture:
+      "Flutter mobile app + Next.js landing page → FastAPI / Node.js backend → Firebase / MongoDB → Trainer discovery & booking engine → Auth & notifications.",
+    features: [
+      "Women-only trainer and learner platform with verified profiles",
+      "Early registration and onboarding flow",
+      "Responsive promotional landing website",
+      "Secure user authentication",
+      "Trainer discovery and booking system",
+      "Mobile-first, scalable startup architecture",
+    ],
+    challenges: [
+      "Designing a trust-first onboarding that makes women feel safe",
+      "Balancing startup speed with scalable architecture decisions",
+      "Building a dual-sided marketplace (learners + trainers) from scratch",
+    ],
+    future: [
+      "Four-wheeler training support",
+      "Real-time trainer tracking",
+      "In-app payments and ratings",
+      "AI-powered trainer recommendations",
+    ],
+    techStack: ["Flutter", "Next.js", "Tailwind CSS", "FastAPI", "Node.js", "Firebase", "MongoDB", "Figma"],
+    github: "https://github.com/areebafatima",
+  },
 ];
 
 const TAG_COLORS: Record<string, string> = {
@@ -363,8 +397,8 @@ export default function Projects() {
 
   return (
     <>
-      <section id="projects" className="relative z-10 py-24 px-6">
-        <hr className="sec-divider mb-24" />
+      <section id="projects" className="relative z-10 py-16 px-6">
+        <hr className="sec-divider mb-14" />
         <div ref={ref} className="max-w-5xl mx-auto">
           {/* Header */}
           <motion.div

@@ -1,7 +1,7 @@
 "use client";
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { Mail, Download, Send, CheckCircle, AlertCircle } from "lucide-react";
+import { Mail, Download, Send, CheckCircle, AlertCircle, Phone } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/SocialIcons";
 
 const SOCIALS = [
@@ -25,6 +25,13 @@ const SOCIALS = [
     sub: "areeeebafatima@gmail.com",
     href: "mailto:areeeebafatima@gmail.com",
     color: "from-violet-600 to-pink-500",
+  },
+  {
+    icon: Phone,
+    label: "Phone",
+    sub: "+91 6301351096",
+    href: "tel:+916301351096",
+    color: "from-green-600 to-emerald-500",
   },
 ];
 
@@ -58,8 +65,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative z-10 py-24 px-6">
-      <hr className="sec-divider mb-24" />
+    <section id="contact" className="relative z-10 py-16 px-6">
+      <hr className="sec-divider mb-14" />
       <div ref={ref} className="max-w-5xl mx-auto">
         {/* Header */}
         <motion.div

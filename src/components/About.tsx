@@ -15,8 +15,8 @@ export default function About() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="about" className="relative z-10 py-24 px-6">
-      <hr className="sec-divider mb-24" />
+    <section id="about" className="relative z-10 py-16 px-6">
+      <hr className="sec-divider mb-14" />
       <div ref={ref} className="max-w-5xl mx-auto">
         {/* Header */}
         <motion.div
