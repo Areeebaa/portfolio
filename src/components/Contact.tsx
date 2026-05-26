@@ -174,7 +174,7 @@ export default function Contact() {
                 type="submit"
                 disabled={status === "loading"}
                 className="shine w-full py-3 rounded-xl font-semibold text-sm text-white flex items-center justify-center gap-2 transition-all hover:-translate-y-0.5 hover:bg-[var(--accent-hover)] disabled:opacity-60 disabled:cursor-not-allowed"
-                style={{ background: "var(--accent)" }}
+                style={{ background: "var(--accent-grad)" }}
               >
                 {status === "loading" ? (
                   <>
