@@ -3,29 +3,29 @@
 /* ─── Color tokens ──────────────────────────────── */
 :root {
   /* Backgrounds */
-  --bg:        #F8F7F4;
-  --bg-2:      #F1EFEA;
+  --bg:        #FAFAF7;
+  --bg-2:      #F3F4F6;
   --bg-card:   #FFFFFF;
   
   /* Text */
-  --fg:        #1F1F23;
-  --fg-2:      #5B5B66;
-  --fg-muted:  #8B8B95;
+  --fg:        #111111;
+  --fg-2:      #52525B;
+  --fg-muted:  #A1A1AA; /* Added a generic muted gray for standard things */
   
   /* Accents */
-  --accent:    #7C5CFC;
-  --accent-hover: #9A7BFF;
-  --accent-2:  #E88BA8;
+  --accent:    #4F46E5;
+  --accent-hover: #4338CA; /* Slightly darker indigo for hover */
+  --accent-2:  #F97373;
   
   /* Borders & UI */
-  --card-border: #E4E1DA;
-  --divider:   #ECE9E2;
-  --card:      rgba(255, 255, 255, 0.85);
-  --pill:      #F1EFEA;
+  --card-border: #E5E5E5;
+  --divider:   #E5E5E5;
+  --card:      rgba(255, 255, 255, 0.9);
+  --pill:      #F3F4F6;
   
   /* Effects */
-  --shadow-soft: rgba(31, 31, 35, 0.06);
-  --glow-subtle: rgba(124, 92, 252, 0.12);
+  --shadow-soft: rgba(17, 17, 17, 0.06);
+  --glow-subtle: rgba(79, 70, 229, 0.12); /* Indigo subtle glow */
 }
 
 
