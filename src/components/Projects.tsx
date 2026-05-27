@@ -24,30 +24,26 @@ const PROJECTS: Project[] = [
   {
     id: "smartpark",
     title: "Smart Parking System",
-    description: "Real-time parking slot detection using ESP32-CAM and YOLOv8 with live updates, predictive analytics, and automated logging.",
-    techStack: ["Python", "YOLOv8", "OpenCV", "Flutter", "Firebase", "ESP32-CAM"],
-    github: "https://github.com/areebafatima",
+    description: "Real-time parking slot detection system using ESP32-CAM and YOLOv8, featuring live occupancy updates, predictive analytics, and automated logging.",
+    techStack: ["Python", "YOLOv8", "OpenCV", "Firebase", "ESP32-CAM"],
   },
   {
-    id: "healthcare",
-    title: "Healthcare Platform",
-    description: "Full-stack healthcare app with AI symptom analysis, appointment booking, health tracking, and doctor-patient communication.",
-    techStack: ["Flutter", "FastAPI", "Firebase", "Gemini AI"],
-    github: "https://github.com/areebafatima",
+    id: "wellnest",
+    title: "WellNest",
+    description: "Full-stack healthcare web application enabling real-time doctor-patient communication, appointment booking, and AI-assisted symptom analysis.",
+    techStack: ["React.js", "TypeScript", "Node.js", "Express", "MongoDB", "Socket.io"],
   },
   {
     id: "federated",
     title: "Federated Learning System",
     description: "Privacy-preserving machine learning framework allowing model training across decentralized edge devices without exposing local data.",
     techStack: ["Python", "PyTorch", "Flower", "Flask", "Transformers"],
-    github: "https://github.com/areebafatima",
   },
   {
     id: "migo",
-    title: "Migo",
-    description: "A women-focused mobility platform connecting female learners with verified female two-wheeler trainers through a safe digital experience.",
-    techStack: ["Flutter", "Next.js", "Tailwind CSS", "FastAPI", "Firebase", "MongoDB"],
-    github: "https://github.com/areebafatima",
+    title: "MIGO",
+    description: "Two-sided mobile platform connecting female trainees with certified motorcycle instructors. Features location-based discovery, OTP auth, and automated course session tracking.",
+    techStack: ["Flutter", "FastAPI", "MongoDB", "JWT"],
   },
 ];
 
@@ -65,7 +61,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <h2 className="text-2xl font-bold text-[var(--fg)]">Selected Work</h2>
+          <h2 className="text-2xl font-bold text-[var(--fg)]">Projects</h2>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 gap-6">
